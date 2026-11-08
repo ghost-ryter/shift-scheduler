@@ -1,0 +1,70 @@
+[
+  {
+    "name": "Alex Rivera",
+    "role": "server",
+    "hourly_rate": 15.0,
+    "availability": {
+      "Mon": ["11:00", "22:00"],
+      "Tue": ["11:00", "22:00"],
+      "Fri": ["16:00", "23:00"],
+      "Sat": ["10:00", "23:00"]
+    }
+  },
+  {
+    "name": "Jordan Lee",
+    "role": "server",
+    "hourly_rate": 14.5,
+    "max_hours": 30,
+    "availability": {
+      "Wed": ["11:00", "22:00"],
+      "Thu": ["11:00", "22:00"],
+      "Sat": ["10:00", "23:00"],
+      "Sun": ["10:00", "20:00"]
+    }
+  },
+  {
+    "name": "Sam Patel",
+    "role": "bartender",
+    "hourly_rate": 18.0,
+    "availability": {
+      "Thu": ["16:00", "23:59"],
+      "Fri": ["16:00", "23:59"],
+      "Sat": ["16:00", "23:59"]
+    }
+  },
+  {
+    "name": "Casey Morgan",
+    "role": "host",
+    "hourly_rate": 13.0,
+    "max_hours": 25,
+    "availability": {
+      "Mon": ["16:00", "22:00"],
+      "Fri": ["16:00", "22:00"],
+      "Sat": ["11:00", "22:00"],
+      "Sun": ["11:00", "20:00"]
+    }
+  },
+  {
+    "name": "Taylor Nguyen",
+    "role": "cook",
+    "hourly_rate": 17.0,
+    "availability": {
+      "Mon": ["10:00", "22:00"],
+      "Tue": ["10:00", "22:00"],
+      "Wed": ["10:00", "22:00"],
+      "Thu": ["10:00", "22:00"],
+      "Fri": ["10:00", "23:00"]
+    }
+  },
+  {
+    "name": "Riley Brooks",
+    "role": "cook",
+    "hourly_rate": 16.5,
+    "availability": {
+      "Thu": ["10:00", "23:00"],
+      "Fri": ["10:00", "23:00"],
+      "Sat": ["10:00", "23:00"],
+      "Sun": ["10:00", "20:00"]
+    }
+  }
+]
