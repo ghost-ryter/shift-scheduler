@@ -1,7 +1,7 @@
 from datetime import time
 from pathlib import Path
 
-from scheduler.loader import load_employees
+from scheduler.loader import load_employees, load_requirements
 
 SAMPLE_FILE = Path(__file__).parent.parent / "data" / "employees.sample.json"
 
@@ -30,4 +30,7 @@ def test_availability_parsed_to_times():
     employees = load_employees(SAMPLE_FILE)
     alex = employees[0]
     assert alex.availability["Mon"] == (time(11, 0), time(22, 0))
-    
+
+def test_loads_requirements():
+    requirements = load_requirements(SAMPLE_FILE.parent / "demand.sample.csv")
+    assert len(requirements) == 20

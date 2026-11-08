@@ -23,3 +23,11 @@ class Shift:
         start_hours = self.start.hour + self.start.minute / 60
         end_hours = self.end.hour + self.end.minute / 60
         return end_hours - start_hours
+
+@dataclass
+class Requirement:
+    day: str
+    role: str
+    start: time
+    end: time
+    count: int = 1

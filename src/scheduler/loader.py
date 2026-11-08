@@ -1,8 +1,9 @@
+import csv
 import json
 from datetime import time
 from pathlib import Path
 
-from .models import Employee
+from .models import Employee, Requirement
 
 
 def _parse_time(text: str) -> time:
@@ -31,3 +32,17 @@ def load_employees(path: str | Path) -> list[Employee]:
             )
         )
     return employees
+
+def load_requirements(path: str | Path) -> list[Requirement]:
+    """Read staffing requirements from a CSV file."""
+    with open(path, newline="") as f:
+        return [
+            Requirement(
+                day=row["day"],
+                role=row["role"],
+                start=_parse_time(row["start"]),
+                end=_parse_time(row["end"]),
+                count=int(row["count"]),
+            )
+            for row in csv.DictReader(f)
+        ]
